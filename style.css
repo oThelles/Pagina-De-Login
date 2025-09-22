@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(100deg, #03c5e7 0%, #7906e6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.container-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    box-shadow: 10px 10px 10px #0000007c;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+input{
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px #c2c2c2;
+    box-shadow: 5px 5px 10px#00000057;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(100deg, #03c5e7 0%, #7906e6);
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    transition: all 0.1s ease;
+    box-shadow: 5px 5px 10px #00000057;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    background: linear-gradient(100deg, #03c5e7 0%, #7906e6 100%);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moveGradient 5s ease infinite;
+    font-weight: bold;
+}
+
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
